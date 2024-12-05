@@ -12,11 +12,12 @@
       href="https://fonts.googleapis.com/css2?family=Bangers&family=Blinker:wght@100;200;300;400;600;700;800;900&family=Oldenburg&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
 
     <title>Weather App</title>
   </head>
   <body>
-    <div class="wrap">
+    <!--<div class="wrap">
       <div class="lighting-1"></div>
     </div>
     <div class="wrap">
@@ -31,26 +32,31 @@
     <div class="wrap">
       <div class="lighting-5"></div>
     </div>
+    <div class="wrap">
+      <div class="lighting-6"></div>
+    </div>-->
     <div class="weather-app-container">
       <header>
-        <form action="" class="input-city-form">
+        <form action="" class="input-city-form" id="input-city-form">
           <input
             type="text"
             placeholder="Enter a City...."
             required
             autofocus
             class="input-city-input-box"
+            id="input-city-input-box"
           />
           <input
             type="submit"
             value="Search"
             class="input-city-submit-button"
+            id="input-city-submit-button"
           />
         </form>
       </header>
       <main class="weather-details-container">
         <div class="weather-details">
-          <h1 class="current-city">London</h1>
+          <h1 class="current-city" id="current-city">London</h1>
           <p class="weather-conditions-and-time">
             Wednesday <strong>19:28</strong>, mist
             <br />
@@ -59,7 +65,7 @@
         </div>
         <div class="temperature-display-container">
           <div class="temperature-icon">⛅</div>
-          <div class="current-temperature">9</div>
+          <div class="current-temperature" id="current-temperature">9</div>
           <div class="temperature-unit">°C</div>
         </div>
       </main>
@@ -76,4 +82,5 @@
       </footer>
     </div>
   </body>
+  <script src="src/index.js"></script>
 </html>
