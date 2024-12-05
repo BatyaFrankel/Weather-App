@@ -56,15 +56,17 @@
       </header>
       <main class="weather-details-container">
         <div class="weather-details">
-          <h1 class="current-city" id="current-city">London</h1>
+          <h1 class="current-city" id="current-city"></h1>
           <p class="weather-conditions-and-time">
-            Wednesday <strong>19:28</strong>, mist
+            <span id="time"> <strong></strong></span>,
+            <span id="condition"></span>
             <br />
-            Humidity: <strong>95%</strong>, Wind: <strong>3.6km/h</strong>
+            Humidity: <strong id="humidity"></strong>, Wind:
+            <strong id="wind-speed">km/h</strong>
           </p>
         </div>
         <div class="temperature-display-container">
-          <div class="temperature-icon">⛅</div>
+          <div class="temperature-icon" id="temperature-icon"></div>
           <div class="current-temperature" id="current-temperature">9</div>
           <div class="temperature-unit">°C</div>
         </div>
